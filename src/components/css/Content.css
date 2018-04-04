@@ -1,0 +1,4 @@
+.Content{
+  background: rgb(34,34,34);
+  background: linear-gradient(180deg, rgba(34,34,34,1) 20%, rgba(242,242,242,1) 25%);
+}

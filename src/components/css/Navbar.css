@@ -1,0 +1,8 @@
+.navbar-nav {
+    display: table;
+    margin: 0 auto;
+}
+.NavItem {
+  float: none;
+  display: inline-block;
+}
