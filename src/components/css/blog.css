@@ -1,0 +1,99 @@
+.card {
+    padding-left: 2%;
+    padding-right: 2%;
+    margin: 25px;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    transition: transform .5s;
+}
+    .card:after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: opacity 2s cubic-bezier(.165, .84, .44, 1);
+      box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .15);
+      content: '';
+      opacity: 0;
+      z-index: -1;
+    }
+
+    .card:hover,
+    .card:focus {
+      transform: scale3d(1.006, 1.006, 0.5);
+}
+      .card:hover,
+      .card:focus,
+      .card:after {
+        opacity: 1;
+      }
+
+      .categorias {
+
+
+          -ms-flex-direction: column;
+          flex-direction: column;
+
+          word-wrap: break-word;
+
+          border-radius: 0.25rem;
+          transition: transform .5s;
+      }
+          .categorias:after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: opacity 2s cubic-bezier(.165, .84, .44, 1);
+            box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .15);
+            content: '';
+            opacity: 0;
+            z-index: -1;
+          }
+
+          .categorias:hover,
+          .categorias:focus {
+            transform: scale3d(1.006, 1.006, 0.5);
+      }
+            .categorias:hover,
+            .categorias:focus,
+            .categorias:after {
+              opacity: 1;
+            }
+
+
+
+.rowPublicaciones{
+margin-right: auto;
+margin-left: auto;
+width: 100%;
+
+display: flex;
+-ms-flex-wrap: wrap;
+flex-wrap: wrap;
+
+}
+
+.fecha{
+text-align: right;
+font-size: 10px;
+font-weight: bold;
+
+}
+
+.displayOther{
+  font-size: 3.5rem;
+      font-weight: 100;
+      line-height: 1.1;
+}

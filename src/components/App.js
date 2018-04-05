@@ -8,7 +8,8 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Welcome to React</h1>
+          
+          <h1 className="App-title">Juan J. De los santos</h1>
         </header>
         <div className="Content">
           <Main/>

@@ -3,6 +3,9 @@ import {Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink} fro
 import {BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import './css/Navbar.css';
 import About from './About.js';
+import Blog from './Blog.js';
+import Portfolio from './Portfolio.js';
+
 
 class Content extends React.Component {
 
@@ -36,10 +39,10 @@ toggle() { this.setState({isOpen: !this.state.isOpen}); }
 								<NavLink><Link to="/">About</Link></NavLink>
 							</NavItem>
 							<NavItem className="NavItem">
-                <NavLink><Link to="/">Blog</Link></NavLink>
+                <NavLink><Link to="/Blog">Blog</Link></NavLink>
               </NavItem>
               <NavItem className="NavItem">
-                <NavLink><Link to="/">Portfolio</Link></NavLink>
+                <NavLink><Link to="/Portfolio">Portfolio</Link></NavLink>
               </NavItem>
             </Nav>
           </Collapse>
@@ -47,6 +50,8 @@ toggle() { this.setState({isOpen: !this.state.isOpen}); }
 
 
 		<Route exact path="/" component={About}/>
+		<Route exact path="/Portfolio" component={Portfolio}/>
+		<Route exact path="/Blog" component={Blog}/>
 
 <br></br>
 <br></br>
